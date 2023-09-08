@@ -1,0 +1,65 @@
+# code-challenge1-phase3
+
+This repository contains solutions for three coding challenges. These challenges cover various programming concepts and are designed to test your problem-solving skills. Below, you'll find a description of each challenge along with usage examples for the provided functions.
+
+## Challenge 1: Converting 12-hour time to 24-hour time
+
+### Description
+This challenge involves converting a 12-hour time (e.g., "8:30 am" or "8:30 pm") to 24-hour time (e.g., "0830" or "2030").
+
+### Function
+The function `convert_to_24_hour(hour, minute, period)` takes three inputs: `hour` (in the range of 1 to 12), `minute` (in the range of 0 to 59), and `period` ("am" or "pm"). It returns a four-digit string representing the time in 24-hour format.
+
+### Example
+
+time_1 = convert_to_24_hour(8, 30, "am")
+print(time_1)  # Output: "0830"
+
+time_2 = convert_to_24_hour(8, 30, "pm")
+print(time_2)  # Output: "2030"
+
+
+## Challenge 2: Two numbers are positive
+### Description
+
+This challenge involves determining whether exactly two out of three given integers are positive numbers.
+Function
+
+The function exactly_two_positive(a, b, c) takes three integer inputs: a, b, and c. It returns True if exactly two of the three integers are positive numbers, and False otherwise.
+
+### Example
+result_1 = exactly_two_positive(2, 4, -3)
+print(result_1)  # Output: True
+
+result_2 = exactly_two_positive(-4, 6, 8)
+print(result_2)  # Output: True
+
+result_3 = exactly_two_positive(4, -6, 9)
+print(result_3)  # Output: True
+
+
+## Challenge 3: Consonant value
+### Description
+
+This challenge involves finding the highest value of consonant substrings in a given lowercase string.
+Function
+
+The function solve(s) takes a single input: a lowercase string containing only alphabetic characters (no spaces). It returns the highest value of consonant substrings, where consonants are any letters except "aeiou".
+### Example
+value_1 = solve("zodiacs")
+print(value_1)  # Output: 26
+
+value_2 = solve("strength")
+print(value_2)  # Output: 57
+
+
+
+# MIT License
+
+## Copyright (c) Year Emmanuel Chol
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
